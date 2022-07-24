@@ -1,7 +1,7 @@
 Startpage
 ========
 
-### Live Demo: <a href="http://Maniacsan.github.io/startpage/">Demo</a>
+### Live Demo: <a href="https://maniacxxx.github.io/startpage/">Demo</a>
 
 This is a fork of BeakBryno7's [startpage](https://github.com/BeakBryno7/startpage).
 
