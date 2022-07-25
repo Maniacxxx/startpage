@@ -1,264 +1,189 @@
-<!DOCTYPE html>
-<!--Starpage by -->
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>~</title>
-	<link rel="stylesheet" style="text/css" href="general.css">
-</head>
-<body>
-	<div class="main" style="display: block">
-		<div class="image-wrapper">
+@font-face {
+  font-family:'Iosevka';
+  src: url('Iosevka.ttf');
+}
 
-			<div class="mySlides fade">
-				<img src="img/side1.gif">
-			</div>
+body {
+  font-family: 'Iosevka', monospace;
+  font-size: 20px;
+  background-color: #0F0F12;
+  background-image: url("img/");
+  background-repeat: repeat;
+  width: 670px;
+  height: 320px;
+  position: absolute;
+  top: 0px;
+  bottom: 100px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side2.gif">
-			</div>
+h1 {
+  font-weight: normal;
+  color: #FEFFFA;
+  position: relative;
+  text-align: center;
+  horizontal-align: middle;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side3.gif">
-			</div>
+.flair {
+  color: #0972D6;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side4.gif">
-			</div>
+.main {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #232328;
+  position: relative;
+  top: -100px;
+  width: 770px;
+  height: 600px;
+  left: -200px;
+  right: 0px;
+  margin: auto;
+  background-color: #18181D;
+  text-align: center;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side5.gif">
-			</div>
+.image-wrapper {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #232328;
+  position: absolute;
+  top: -1px;
+  width: 300px;
+  height: 600px;
+  left: 770px;
+  background-color: #18181D;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side6.gif">
-			</div>
+img {
+  top: -1px;
+  width: 300px;
+  height: 600px;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side7.gif">
-			</div>
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 575px;
+  width: auto;
+  right: 10px;
+  padding: 5px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  user-select: none;
+  border-radius: 3px 0 0 3px;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side8.gif">
-			</div>
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side9.gif">
-			</div>
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
-			<div class="mySlides fade">
-				<img src="img/side10.gif">
-			</div>
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
-			<div class="mySlides fade">
-				<img src="img/side11.gif">
-			</div>
+.codes {
+  color: #FFFFFF;
+  font-family: Iosevka, monospace;
+  font-size: 18px;
+  position: absolute;
+  top: 565px;
+  width: auto;
+  height: auto;
+  left: 12px;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side12.gif">
-			</div>
+li {
+  margin: 10px 0;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side13.gif">
-			</div>
+nav {
+  display: inline-block;
+  vertical-align: middle;
+  horizontal-align: middle;
+  color: #BFBFBF;
+  font-size: 20px;
+  text-align: center;
+  left= 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side14.gif">
-			</div>
+ul {
+  display: table-cell;
+  horizontal-align: middle;
+  text-align: center;
+  height: 100%;
+  border-color: #232328;
+  border-right-width: 1px;
+  border-right-style: solid;
+  padding: 10px 25px;
+  transition: all 0.8s;
+  cursor: default;
+  list-style-type: none;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side15.gif">
-			</div>
+ul:last-of-type {
+  border-right-width: 0;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side16.gif">
-			</div>
+ul:hover {
+  color: #FFFFFF;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side17.gif">
-			</div>
+ul > li:first-of-type{
+  padding-top: 5px;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side18.gif">
-			</div>
+ul > li > a {
+  text-decoration:none;
+  color: #adadad;
+  transition: all 0.8s;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side19.gif">
-			</div>
+ul[class=green] > li > a:hover {
+  color: #33a752;
+  transition: all 0.5s;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side20.gif">
-			</div>
+ul[class=blue] > li > a:hover {
+  color: #0972D6;
+  transition: all 0.5s;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side21.gif">
-			</div>
+ul[class=red] > li > a:hover {
+  color: #ed3434;
+  transition: all 0.5s;
+}
 
-			<div class="mySlides fade">
-				<img src="img/side22.gif">
-			</div>
+ul[class=yellow] > li > a:hover {
+  color: #edd934;
+  transition: all 0.5s;
+}
 
-
-			<div class="mySlides fade">
-				<img src="img/side23.gif">
-			</div>
-
-
-			<a class="next" onclick="plusSlides(1)">&#8734;</a>
-		</div>
-		<br>
-
-		<div style="text-align:center">
-			<span class="reqdVar" onclick="currentSlide(1)"></span>
-			<span class="reqdVar" onclick="currentSlide(2)"></span>
-			<span class="reqdVar" onclick="currentSlide(3)"></span>
-			<span class="reqdVar" onclick="currentSlide(4)"></span>
-			<span class="reqdVar" onclick="currentSlide(5)"></span>
-			<span class="reqdVar" onclick="currentSlide(6)"></span>
-			<span class="reqdVar" onclick="currentSlide(7)"></span>
-			<span class="reqdVar" onclick="currentSlide(8)"></span>
-			<span class="reqdVar" onclick="currentSlide(9)"></span>
-			<span class="reqdVar" onclick="currentSlide(10)"></span>
-			<span class="reqdVar" onclick="currentSlide(11)"></span>
-			<span class="reqdVar" onclick="currentSlide(12)"></span>
-			<span class="reqdVar" onclick="currentSlide(13)"></span>
-			<span class="reqdVar" onclick="currentSlide(14)"></span>
-			<span class="reqdVar" onclick="currentSlide(15)"></span>
-			<span class="reqdVar" onclick="currentSlide(16)"></span>
-			<span class="reqdVar" onclick="currentSlide(17)"></span>
-			<span class="reqdVar" onclick="currentSlide(18)"></span>
-			<span class="reqdVar" onclick="currentSlide(19)"></span>
-			<span class="reqdVar" onclick="currentSlide(20)"></span>
-			<span class="reqdVar" onclick="currentSlide(21)"></span>
-			<span class="reqdVar" onclick="currentSlide(22)"></span>
-			<span class="reqdVar" onclick="currentSlide(23)"></span>
-		</div>
-
-		<header>
-			<br>
-			<h1>おかえりなさいませ, <span class="flair">M A N I A C</span></h1>
-		</header>
-
-		<nav>
-			<br>
-			<ul class="blue">
-				<a style="font-size:22px">Social</a>
-				<li><a href="https://www.youtube.com">Youtube</a></li>
-				<li><a href="https://todoist.com/app/today">To do</a></li>
-				<li><a href="https://github.com/">Github</a></li>
-				<li><a href="https://new.reddit.com/">Reddit</a></li>
-				<li><a href="https://twitter.com/">Twitter</a></li>
-				<li><a href="https://news.ycombinator.com/news">HackerNews</a></li>
-				<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
-			</ul>
-
-			<ul class="red">
-				<a style="font-size:22px">Anime</a>
-				<li><a href="https://animixplay.to/user/Maniac">AniMixPlay</a></li>
-				<li><a href="https://anilist.co/home">AniList</a></li>
-				<li><a href="https://nyaa.si/">Nyaa</a></li>
-				<li><a href="https://mangadex.org/">MangaDex</a></li>
-				<li><a href="https://pixiv.net/">Pixiv</a></li>
-				<li><a href="https://myanimelist.net/">MyAnimeList</a></li>
-			</ul>
-
-			<ul class="light-orange">
-				<a style="font-size:22px">Boards</a>
-				<li><a href="https://4chan.org/">4chan</a></li>
-				<li><a href="https://boards.4channel.org/a/">/a/</a></li>
-				<li><a href="https://boards.4channel.org/c/">/c/</a></li>
-				<li><a href="https://boards.4channel.org/w/">/w/</a></li>
-			</ul>
-
-			<ul class="green">
-				<li><a style="font-size:22px">Google</a>
-				<li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
-       			<li><a href="https://docs.google.com/document/u/0/">Google Docs</a></li>
-        		<li><a href="https://docs.google.com/presentation/u/0/">Google Slides</a></li>
-        		<li><a href="https://drive.google.com/drive/my-drive">Google Drive</a></li>
-        		<li><a href="https://docs.google.com/spreadsheets/u/0/">Google Sheets</a></li>
-			</ul>
-
-			<ul class="yellow">
-				<a style="font-size:22px">Else</a>
-				<li><a href="https://temp-mail.org/en/">TempMail</a></li>
-				<li><a href="https://amazon.in">Amazon</a></li>
-				<li><a href="https://1337x.to/">1337x</a></li>
-			</ul>
-
-			<!--
-			<ul class="example">
-				<a style="font-size:22px">Example</a>
-				<li><a href="https://github.com/Maniacxxx/startpage">Github Repo</a></li>
-			</ul>
-			-->
-
-		</nav>
-
-		<div class="codes" id="codes">
-			<script>
-			//document.getElementById("main").innerHTML = Date();
-			function updateClock() {
-				var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
-				var m = new Date();
-				var dateString =
-				(days[ m.getDay() ]) + " " +
-				("0" + m.getDate()).slice(-2) + "/" +
-				("0" + (m.getMonth()+1)).slice(-2) +"/"+
-				m.getFullYear() +" "+
-				("0" + m.getHours()).slice(-2) + ":" +
-				("0" + m.getMinutes()).slice(-2) + ":" +
-				("0" + m.getSeconds()).slice(-2);
-
-				// set the content of the element with the ID codes to the formatted string
-				document.getElementById('codes').innerHTML = dateString;
-
-				// call this function again in 1000ms
-				setTimeout(updateClock, 1000);
-			}
-			updateClock(); // initial call
-
-			// Set local storage
-			var slideIx = Number(localStorage.getItem('slideIndex') || 1);
-
-			var slideIndex = slideIx;
-			showSlides(slideIndex);
-
-			// Next/previous controls
-			function plusSlides(n) {
-				showSlides(slideIndex += n);
-				localStorage.setItem('slideIndex', slideIndex);
-				console.log(localStorage.getItem('slideIndex'));
-			}
-
-			// Thumbnail image controls
-			function currentSlides(n) {
-				showSlides(slideIndex = n);
-				localStorage.setItem('slideIndex', slideIndex);
-				console.log(localStorage.getItem('slideIndex'));
-			}
-
-			// Show slides
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("mySlides");
-				var reqdVars = document.getElementsByClassName("reqdVar");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < reqdVars.length; i++) {
-					reqdVars[i].className = reqdVars[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";
-				reqdVars[slideIndex-1].className += " active";
-			}
-			</script>
-		</div>
-	</body>
-	</html>
+ul[class= light-orange] > li > a:hover {
+  color: #ffccaa;
+  transition: all 0.5s;
+}
